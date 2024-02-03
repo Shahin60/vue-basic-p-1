@@ -1,0 +1,26 @@
+button {
+  margin: 6px;
+  padding: 5px;
+}
+.red {
+  background-color: red;
+  width: 30px;
+  height: 15px;
+}
+.green {
+  background-color: green;
+  width: 30px;
+  height: 15px;
+}
+.blue {
+  background-color: blue;
+  width: 30px;
+  height: 15px;
+}
+.active {
+  background-color: gray;
+  color: #fff;
+}
+.bold{
+  font-weight: 600;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.global.js"></script>
+    <style>
+  #style{
+    width: 30px;
+        height: 30px;
+        border: 2px solid cadetblue;
+        
+  }
+  
+
+
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{title}}</p>
+        <p>{{creatTime()}}</p>
+
+        <input type="text" placeholder="enter yoyr name" @keyup.enter="kyeUp" />
+        <p>{{name}}</p>
+        <hr>
+        <form @submit.prevent="submit()">
+
+            <input type="text" name="" id="" ><br>
+            <br>
+            <button value="submit">ok</button>
+
+        </form>
+
+        <div id="style" @click="clickMe">
+
+    </div>
+
+    </div>
+    <script src="app.js"></script>
+    <form action=""></form>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.global.js"></script>
+    <style>
+        button {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <input type="text" name="" id="" @keyup.enter="interYourName">
+        <p>your output:{{num}}</p> -->
+
+        <p>{{ title}}</p>
+        <!-- <p>{{setTim()}}</p> -->
+        <!-- <input type="text" :value="num" name="" id=""  @input="input" placeholder="inter Your number"><br><br> -->
+
+        <input type="text" v-model.number ="num" placeholder="inter Your number"><br><br>
+        <button @click="getduble ">duble:</button>
+        <button @click="squier">squier</button>
+        <button @click="reset">reset</button>
+        <button @click="add"> add</button>
+        <hr>
+        <p>number : {{num}}</p>
+        <p>result : {{result}} </p>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

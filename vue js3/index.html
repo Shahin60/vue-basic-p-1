@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div id="app">
+            <p>count:{{ count}}</p>
+            <button v-on:click="increment( 1)">increment</button>
+            <button @click="decrement(1)">decrement</button> <br>
+
+
+            <button @:click="increment(2)">increment+2</button>
+            <button @click="decrement (2)">decrement-2</button>
+            <hr>
+            <button @click="test($event)">click</button>
+        </div>
+    </center>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

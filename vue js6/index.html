@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <button :class="{active:color == 'red'bold=='true'}" @click="btnClick('red')">red</button>
+        <button :class="{active:color == 'green',}" @click="btnClick('green')">green</button>
+        <button :class="{active:color == 'blue'}" @click="btnClick('blue')">blue</button>
+
+        <div :class="color"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
